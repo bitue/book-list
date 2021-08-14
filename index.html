@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book-list</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        tr:nth-child(2n){
+            background-color: rgb(207, 207, 207);margin: 5px 0px; padding: 5px 0px;
+            color: goldenrod;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 ">
+    <div class="container mx-auto ">
+        <h1 class="text-center font-bold text-3xl mt-5 uppercase my-5">Prepare the book list that <span
+                class="text-yellow-500">you read</span> </h1>
+
+        <div class="basic-input w-9/12 mx-auto bg-gray-100 flex flex-col space-y-5 ">
+            <div class="space-y-1">
+                <p class="text-2xl font-semibold text-yellow-600 px-5 rounded-lg">Author Name:</p>
+                <input class="block w-full py-1 rounded-lg shadow-2xl focus:bg-yellow-200" type="text" name=""
+                    id="author">
+            </div>
+            <div class="space-y-1">
+                <p class="text-2xl text-yellow-600 font-semibold px-5 rounded-lg">Book Name:</p>
+                <input class="block w-full py-1 rounded-lg shadow-2xl focus:bg-yellow-200" type="text" name=""
+                    id="book">
+            </div>
+            <div class="space-y-1">
+                <p class="text-2xl text-yellow-600 font-semibold px-5 rounded-lg">Date you read:</p>
+                <input class="block w-full py-1 rounded-lg shadow-2xl focus:bg-yellow-200" type="datetime" name=""
+                    id="date">
+            </div>
+
+            <div>
+                <button id="btn"
+                    class="w-full py-2 bg-yellow-500 font-bold shadow-lg rounded-lg hover:bg-yellow-600">Add to
+                    click</button>
+            </div>
+
+
+        </div>
+        <div class="container mx-auto mt-10" id="add-section">
+            <table class="w-9/12 py-2 mx-auto">
+                <thead class="w-full py-2 text-center font-bold text-1xl ">
+                    <td>Author Name</td>
+                    <td>Book Name</td>
+                    <td>Date you read</td>
+                </thead>
+                <tbody id="push" class="bg-gray-200">
+                    <!-- <tr class="tr">
+                        <th class="py-2 "></th>
+                        <th class="py-2 ">name</th>
+                        <th class="py-2 ">name</th>
+                    </tr> -->
+
+                </tbody>
+            </table>
+
+        </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
